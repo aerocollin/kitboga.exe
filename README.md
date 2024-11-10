@@ -48,7 +48,7 @@ cd kitboga.exe
 
 3. **Run and fill out the certificates**
 ```bash
-  openssl req -x509 -newkey rsa:2048 -nodes -keyout key.pem -out cert.pem -days 365
+   openssl req -x509 -newkey rsa:2048 -nodes -keyout key.pem -out cert.pem -days 365 -subj "/CN=127.0.0.1"
 ```
 
 4. **Open chrome://extensions/ and load the extension**
